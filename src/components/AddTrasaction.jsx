@@ -26,7 +26,7 @@ const AddTrasaction = ({onSubmit}) => {
             name="transactionType"
             onChange={(e) => setTransactionType(e.target.value)}
           >
-            <option value="">Debit</option>
+            <option value="debit">Debit</option>
             <option value="debit">Debit</option>
             <option value="credit">Credit</option>
           </select>
@@ -37,6 +37,7 @@ const AddTrasaction = ({onSubmit}) => {
             type="number"
             className="w-96 mt-2"
             onChange={(e) => setAmount(e.target.value)}
+            required
           />
         </div>
         <div className="flex gap-40 my-12">
@@ -45,6 +46,7 @@ const AddTrasaction = ({onSubmit}) => {
             type="text"
             className="w-96 mt-2"
             onChange={(e) => setDescription(e.target.value)}
+            required
           />
         </div>
 
